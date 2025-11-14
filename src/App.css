@@ -1,0 +1,307 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Weather Widget */
+.weather-widget {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 400px;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  flex-shrink: 0;
+}
+
+.weather-info p {
+  color: white;
+  margin: 4px 0;
+}
+
+.weather-info .temp {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.weather-info .city {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.outfit-suggestion {
+  background: rgba(0,0,0,0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.outfit-suggestion h3 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.suggestion-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.item-tag {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.suggestion-colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Certificate */
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certificate {
+  width: 100%;
+  max-width: 800px;
+}
+
+.certificate-border {
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.2) 100%);
+  text-align: center;
+  color: white;
+}
+
+.certificate-header h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.certificate-header .subtitle {
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.certificate-body {
+  margin: 40px 0;
+}
+
+.certificate-body .label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin: 12px 0;
+}
+
+.certificate-body .name {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 24px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat .number {
+  font-size: 32px;
+  font-weight: 300;
+  display: block;
+}
+
+.stat .label {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.seal {
+  margin: 24px 0;
+}
+
+.seal-circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+.certificate-header .footer {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 24px;
+}
+
+.btn-print {
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-print:hover {
+  transform: scale(1.05);
+}
+
+/* Cookies Page */
+.cookies-page {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.cookies-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cookies-container h1 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.cookies-section {
+  margin-bottom: 32px;
+}
+
+.cookies-section h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.cookies-section p {
+  color: rgba(255,255,255,0.8);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.cookie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cookie-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.cookie-item h3 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.cookie-item p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 8px;
+}
+
+.rights-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rights-list li {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
+.contact-info {
+  background: rgba(255,255,255,0.05);
+  border-left: 3px solid rgba(255,255,255,0.3);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: underline;
+}
