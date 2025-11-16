@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build"
+}
+```
+
+**5. Commit: "Add vercel config"**
