@@ -1,9 +1,8 @@
-export default async function handler(req, res) {
+module.exports = (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  
-  res.status(200).json({
+  res.json({
     ok: true,
     message: 'GQOKA Backend is alive on Vercel',
     timestamp: new Date().toISOString()
   });
-}
+};
