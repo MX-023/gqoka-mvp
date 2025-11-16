@@ -1,6 +1,14 @@
 {
   "name": "gqoka-mvp",
   "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
   "description": "GQOKA - Intelligent Fashion Platform",
   "main": "index.js",
   "scripts": {
